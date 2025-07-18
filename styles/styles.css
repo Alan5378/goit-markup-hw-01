@@ -1,0 +1,22 @@
+:root {
+  --primery-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --background-color: #ffffff;
+  --herobackground-color: #2f303a;
+  --tel-mail-color: rgba(255, 255, 255, 0.6);
+  --font-size14px: 14px;
+  --font-size16px: 16px;
+  --font-size36px: 36px;
+  --font: bold;
+  --font-style: normal;
+  --font-weight500: 500;
+  --font-wtightnormal: normal;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    background: var(--background-color);
+    color: var(--primery-text-color);
+}
+

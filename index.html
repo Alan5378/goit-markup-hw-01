@@ -4,47 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-  <header>
+  <header class="page-header">
     <nav>
-        <a class="logo" href="/">WebStudio</a>
+        <a class="logo" href="/">Web<span class="logo-colored">Studio</span></a>
         <ul class="site-nav">
-            <li><a class="site-nav-link" href="#">Studio</a></li>
+            <li><a class="site-nav-link current" href="#">Studio</a></li>
             <li><a class="site-nav-link" href="">Portfolio</a></li>
             <li><a class="site-nav-link" href="">Contacts</a></li>
         </ul>
     </nav>
 
-    <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+    <ul class="auth-nav">
+        <li><a class="auth-nav-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li><a class="auth-nav-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
     </ul>
   </header>
   <main>
-<section>
-    <h1>Effective Solutions for Your Business</h1>
-    <button type="button">Order Service</button>
+<section class="main-section">
+    <h1 class="main-caption"> Effective Solutions for Your Business</h1>
+    <button class="btn-item" type="button"><span class="btn-desc">Order Service</span></button>
 </section>
-<section>
-    <h2>Our specialities</h2>
-    <ul>
-        <li>
-            <h3>Strategy</h3>
-            <p>Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
+<section class="our-features-section">
+    <h2 class="our-features-title">Our specialities</h2>
+    <ul class="items">
+        <li class="our-features-list">
+            <h3 class="our-features-heading">Strategy</h3>
+            <p class="our-features-paragraph">Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
         </li>
-        <li>
-            <h3>Punctuality</h3>
-            <p>Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
+        <li class="our-features-list">
+            <h3 class="our-features-heading">Punctuality</h3>
+            <p class="our-features-paragraph">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
         </li>
-        <li>
-            <h3>Diligence</h3>
-            <p>Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
+        <li class="our-features-list">
+            <h3 class="our-features-heading">Diligence</h3>
+            <p class="our-features-paragraph">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
         </li>
-        <li>
-            <h3>Technologies</h3>
-            <p>Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
+        <li class="our-features-list">
+            <h3 class="our-features-heading">Technologies</h3>
+            <p class="our-features-paragraph">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
         </li>
     </ul>
 </section>
@@ -56,7 +56,7 @@
         <li><img src="./images/box3.jpg" alt="A man working with a clipboard and a palette of colours." width="370"></li>
     </ul>
 </section>
-<section>
+<section class="colored-section">
     <h2>Our Team</h2>
     <ul>
         <li>
@@ -81,15 +81,28 @@
         </li>
     </ul>
 </section>
+
   </main>
+  <section class="colored-section2">
   <footer>
     <h5>WebStudio</h5>
     <address>
        36 cluain na ri, clondulane, fermoy, co. cork, Ireland</br>
-       Eircode: E91 EC89,</br>
+       Eircode: E91 EC89.</br>
        <a href="mailto:info@devstudio.com">info@devstudio.com</a></br>
        <a href="tel:+110001111111">+11 (000) 111-11-11</a>
     </address>
   </footer>
+  </section>
 </body>
 </html>
+<style>
+button{
+display:block;
+margin: auto;
+height:56px;
+width:169px;
+background-color:#4D5AE5;
+color:white;
+}
+</style>

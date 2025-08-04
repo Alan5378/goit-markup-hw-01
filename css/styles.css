@@ -14,6 +14,12 @@
   --font-wtightnormal: normal;
 }
 
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body{
     font-family: "Roboto", sans-serif;
     background: var(--background-color);
@@ -23,9 +29,31 @@ li, a, ul{
    list-style: none;
    text-decoration: none;
 }
+
+.section{
+  padding-top: 94px;
+  padding-bottom:94px;
+}
+.container {
+width: 1200px;
+margin: 0 auto;
+padding-left: 15px;
+padding-right: 15px;
+
+}
+
 /* Header */
+
+.head-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
 .page-header{
   background-color: var(--background-color);
+  border-bottom: 1px solid #ececee;
 }
 /* Logo */
 .logo{
@@ -43,20 +71,35 @@ li, a, ul{
 .logo-colored{
   color: var(--title-text-color);
 }
-
+.page-nav{
+  display: flex;
+  align-items: center;
+}
 .site-nav{
   font-size: var(--font-size14px);
   font-style: var(--font-style);
   font-weight: var(--font-weight500);
   line-height: 1.1;
   letter-spacing: 0.02em;
+
+  display: flex;
+  justify-content: center;
+  margin-left: 93px;
 }
 
 .site-nav .site-nav-link.current {
   color: var(--accent-color);
 }
+
+.site-nav-list:not(:first-child){
+  margin-left: 50px;
+}
 .site-nav-link{
   color: var(--title-text-color);
+
+  display: block;
+  padding-top: 32px;
+  padding-bottom:32px;
 }
 .site-nav-link:hover, .site-nav-link:focus{
   color: var(--accent-color);
@@ -68,10 +111,21 @@ li, a, ul{
   font-size: var(--font-size14px);
   line-height: 1.1;
   letter-spacing: 0.02em;
+
+  display: flex;
+  margin-left:auto;
+}
+
+.auth-nav .auth-nav-list + .auth-nav-list {
+  margin-left: 50px;
 }
 
 .auth-nav-link {
   color: var(--primery-text-color);
+
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .auth-nav-link:hover, .auth-nav-link:focus{
@@ -80,8 +134,20 @@ li, a, ul{
 
 /* Main body*/
 /* Hero section*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow:hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
 .main-section{
   color: var(--herobackground-color);
+  padding: 200px 0;
 }
 .main-caption{
   font-style: var(--font-style);
@@ -92,24 +158,33 @@ li, a, ul{
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color:var(--background-color);
+
+  width:696px;
+  margin:0 auto;
 }
 .btn-item{
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color:var(--background-color);
+  border: none;
   border-radius: 4px;
-  background-color: var(--accent-color);
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 
+  margin-top:30px;
+  padding: 10px 32px;
+ 
 }
 .btn-desc{
-  
+  display: flex;
+  min-width:150px;
+  align-items: center;
+  text-align: center;
   font-style: var(--font-style);
   font-weight: var(--font);
   font-size: var(--font-size16px);
-  line-height: 1.87;  
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color:var(--background-color);
+  
 }
 
 /* Our Features section */
@@ -121,12 +196,19 @@ li, a, ul{
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+
+  margin-bottom: 8px;
 }
 .items{
   background-color: var(--background-color);
+
+  display: flex;
+  flex-direction: wrap;
 }
 .our-features-list{
-  
+  width:264px;
+  margin-right: 24px;
+  margin-bottom:0;
 }
 
 .our-features-heading{

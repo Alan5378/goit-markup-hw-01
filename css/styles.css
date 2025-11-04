@@ -3,6 +3,7 @@
   --title-text-color:#2E2F42;
   --accent-color: #4D5AE5;
   --background-color: #ffffff;
+  --bgc-section-color: #f4f4fd;
   --herobackground-color: #2E2F42;
   --tel-mail-color: rgba(255, 255, 255, 0.6);
   --font-size14px: 14px;
@@ -53,7 +54,6 @@ padding-right: 15px;
 
 }
 .items {
-  background-color: var(--background-color);
 
   display: flex;
   flex-wrap: wrap;
@@ -161,13 +161,17 @@ padding-right: 15px;
   border: 0;
   clip: rect(0 0 0 0);
 }
-/* .overlay{
-  height: 600;
+.overlay{
+  height: 600px;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47,48,58,0.4)), url('../images/studio/people-office-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
-} */
+}
 .main-section.section{
   text-align: center;
   background-color: #2E2F42;;
@@ -244,8 +248,22 @@ padding-right: 15px;
   line-height: 1.5;
   letter-spacing: 0.03em;
   color: var(--primery-text-color); 
+
+}
+
+.features-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background-color: var(--bgc-section-color);
+  margin-bottom: 8px;
 }
 /* About Us section */
+.about-section{
+  padding-bottom: 94px;
+}
 .about-section-title {
   margin-bottom: 50px;
 

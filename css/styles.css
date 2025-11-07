@@ -259,6 +259,7 @@ padding-right: 15px;
   height: 120px;
   background-color: var(--bgc-section-color);
   margin-bottom: 8px;
+  border-radius: 2%;
 }
 /* About Us section */
 .about-section{
@@ -289,6 +290,7 @@ padding-right: 15px;
   display: block;
   max-width: 100%;
   height: auto;
+  border-image: round;
 }
 /* Our Team section*/
 .our-team-section{
@@ -376,6 +378,11 @@ padding-right: 15px;
 }
 .team-social-icon:hover{
   fill: var(--background-color);
+}
+
+/* customer section */
+.customer-logo{
+  display: flex;
 }
 
 /* Portfolio page */

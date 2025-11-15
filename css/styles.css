@@ -381,8 +381,32 @@ padding-right: 15px;
 }
 
 /* customer section */
+.test{
+  border:1px solid black;
+}
+.our-client-section{
+  padding-bottom: 94px;
+}
 .customer-logo{
-  display: flex;
+  display: block;
+  border-radius: 4px;
+  border: 1px solid black;
+  fill: currentColor;
+  padding: 16px 32px;
+  cursor: pointer;
+
+  transition: border, fill var(--animation);
+}
+.customer-logo:hover{
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.clients{
+  margin-right: 24px;
+}
+.clients:last-child{
+  margin-right: 0;
 }
 
 /* Portfolio page */
